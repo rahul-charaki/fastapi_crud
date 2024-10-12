@@ -1,0 +1,12 @@
+from motor.motor_asyncio import AsyncIOMotorClient
+from bson.objectid import ObjectId
+from datetime import datetime
+
+# connect to mongodb
+client = AsyncIOMotorClient('mongodb://localhost:27017')
+db = client['crud_db']
+
+# convert object id to string
+def object_id_to_str(item):
+    item['_id'] = str(item['_id'])
+    return item
