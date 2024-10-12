@@ -1,7 +1,7 @@
 import pytest
 from httpx import AsyncClient, ASGITransport
 from fastapi import status
-from app.main import app
+from main import app
 from app.models import Item
 from datetime import datetime, timezone
 
