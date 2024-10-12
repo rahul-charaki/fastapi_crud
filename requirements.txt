@@ -6,3 +6,4 @@ motor
 pytest 
 httpx 
 pytest-asyncio
+pydantic[email]
